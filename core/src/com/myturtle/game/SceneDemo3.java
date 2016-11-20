@@ -21,7 +21,7 @@ public class SceneDemo3 implements ApplicationListener {
 
         @Override
         public void draw(Batch batch, float alpha){
-            batch.draw(texture,this.getX(),getY());
+            batch.draw(texture,this.getX(),this.getY());
         }
     }
     private Stage stage;
@@ -34,8 +34,8 @@ public class SceneDemo3 implements ApplicationListener {
         MyActor myActor = new MyActor();
 
         MoveToAction moveAction = new MoveToAction();
-        moveAction.setPosition(300f, 0f);
-        moveAction.setDuration(10f);
+        moveAction.setPosition(1000f, 0f);
+        moveAction.setDuration(5f);
         myActor.addAction(moveAction);
 
         stage.addActor(myActor);
